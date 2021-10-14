@@ -18,5 +18,5 @@ public class Bai3lad1 {
         System.out.printf("Delta = %.2f", delta);
         heSo.close();
     }
-    
+     
 }

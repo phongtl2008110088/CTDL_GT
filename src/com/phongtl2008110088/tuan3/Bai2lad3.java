@@ -14,4 +14,4 @@ public class Bai2lad3 {
                     System.out.print("\n");
 		}
     }
-}
+} 

@@ -19,7 +19,7 @@ public class Bai4lad2 {
             default: System.out.println("Lựa chọn không hợp lệ!!!");
         }
         luaChon.close();
-    }
+    } 
 
     static void giaiPTBac1() {
         Scanner bien = new Scanner(System.in);

@@ -17,6 +17,6 @@ public class Bai2lad1 {
         System.out.printf("Diện tích cua hình CN là: %d \n", DT);
         System.out.printf("Cạnh nhỏ của hình chữ nhật: %d", Math.min(dai, rong));
         canh.close();
-    }
+    } 
     
 }

@@ -33,4 +33,4 @@ public class Bai3lad3 {
         System.out.printf("Trung bình cộng các số chia hết cho 3 trong mảng là: %.2f", TB);
         N.close();
     }
-}
+} 

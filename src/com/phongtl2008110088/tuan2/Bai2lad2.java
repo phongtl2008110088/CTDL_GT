@@ -12,7 +12,7 @@ public class Bai2lad2 {
         a = heSo.nextInt();
         System.out.print("Nhập b = ");
         b = heSo.nextInt();
-        System.out.print("Nhập c = ");
+        System.out.print("Nhập c = "); 
         c = heSo.nextInt();
         if(a == 0){
             if(b == 0){

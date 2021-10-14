@@ -22,5 +22,5 @@ public class Bai1lad2 {
             System.out.printf("Nghiệm của phương trình %dx + %d = 0 là %.2f", a, b, x);
         }
         bien.close();    
-    }
+    } 
 }

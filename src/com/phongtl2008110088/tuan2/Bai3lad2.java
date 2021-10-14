@@ -18,5 +18,5 @@ public class Bai3lad2 {
         }
         soLieu.close();
     }
-    
+     
 }
