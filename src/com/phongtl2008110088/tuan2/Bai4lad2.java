@@ -86,11 +86,11 @@ public class Bai4lad2 {
         System.out.print("Số điện sử dụng trong tháng là: ");
         soDien = soLieu.nextInt();
         if(soDien < 50){
-            tienDien = soDien*1000;
+            tienDien = soDien*1500;
             System.out.printf("Số tiền điện là %d", tienDien);
         }
         else{
-            tienDien = 50*1000 + (soDien - 50)*1200;
+            tienDien = 50*1500 + (soDien - 50)*1000;
             System.out.printf("Số tiền điện là %d", tienDien);
         }
         soLieu.close();

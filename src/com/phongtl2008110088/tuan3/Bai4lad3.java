@@ -41,10 +41,10 @@ public class Bai4lad3 {
                     if(diem[i] >= 6.5)
                         System.out.println("Xếp loại: Khá");
                     else{
-                        if(diem[i] >= 5)
+                        if(diem[i] >= 3)
                             System.out.println("Xếp loại: Trung bình");
                         else    
-                            System.out.println("Xếp loại: Yếu");
+                            System.out.println("Xếp loại: Kém");
                     }
                 }
             }
