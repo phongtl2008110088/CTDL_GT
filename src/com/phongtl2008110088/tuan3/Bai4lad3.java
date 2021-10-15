@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Bai4lad3 {
     public static void main(String[] args) {
         Scanner duLieu = new Scanner(System.in);
-        System.out.print("Nhập số sinh viên: ");
+        System.out.print("Số lợn sinh viên: ");
         int n = duLieu.nextInt();
         String ho_Ten[] = new String[n];
         double diem[] = new double[n];
@@ -28,27 +28,24 @@ public class Bai4lad3 {
                 }
             }
         }
-        System.out.printf("------DANH SÁCH SINH VIÊN------");
+        System.out.printf("  Số Lợn sinh viên  ");
         for(int i = 0;i < n;i++){
             System.out.printf("\nHọ và tên: %s\n", ho_Ten[i]);
             System.out.printf("Điểm: %.2f\n", diem[i]);
-            if(diem[i] >= 9)
-                System.out.println("Xếp loại: Xuất sắc");
+            if(diem[i] >= 7.5)
+                System.out.println("Xếp loại: Giỏi");
             else{
-                if(diem[i] >= 7.5)
-                    System.out.println("Xếp loại: Giỏi");
+                if(diem[i] >= 6.5)
+                    System.out.println("Xếp loại: Khá");
                 else{
-                    if(diem[i] >= 6.5)
-                        System.out.println("Xếp loại: Khá");
+                    if(diem[i] >= 3.5)
+                        System.out.println("Xếp loại: Trung Bình");
                     else{
                         if(diem[i] >= 3)
-                            System.out.println("Xếp loại: Trung bình");
-                        else    
-                            System.out.println("Xếp loại: Kém");
+                            System.out.println("Xếp loại: Yếu");
                     }
                 }
             }
-            System.out.print("_____________________________");
         }
         duLieu.close();
     }
