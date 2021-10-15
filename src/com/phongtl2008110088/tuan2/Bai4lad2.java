@@ -23,9 +23,9 @@ public class Bai4lad2 {
 
     static void giaiPTBac1() {
         Scanner bien = new Scanner(System.in);
-        System.out.print("Nhập a : ");
+        System.out.print("Nhập so thứ nhất : ");
         int a = bien.nextInt();
-        System.out.print("Nhập b : ");
+        System.out.print("Nhập số thứ hai : ");
         int b = bien.nextInt();
         if(a == 0){
             if(b == 0)
@@ -42,11 +42,11 @@ public class Bai4lad2 {
     static void giaiPTBac2() {
         double x1, x2, delta;
         Scanner heSo = new Scanner(System.in);
-        System.out.print("Nhập a : ");
+        System.out.print("Nhập số thứ nhất : ");
         int a = heSo.nextInt();
-        System.out.print("Nhập b : ");
+        System.out.print("Nhập số thứ hai : ");
         int b = heSo.nextInt();
-        System.out.print("Nhập c : ");
+        System.out.print("Nhập số thứ ba : ");
         int c = heSo.nextInt();
         if(a == 0){
             if(b == 0){

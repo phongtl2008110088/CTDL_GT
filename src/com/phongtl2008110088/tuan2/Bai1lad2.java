@@ -7,9 +7,9 @@ public class Bai1lad2 {
         int a, b;
         double x;
         Scanner bien = new Scanner(System.in);
-        System.out.print("Nhập a = ");
+        System.out.print("Nhập số thứ nhất : ");
         a = bien.nextInt();
-        System.out.print("Nhập b = ");
+        System.out.print("Nhập số thứ hai : ");
         b = bien.nextInt();
         if(a == 0){
             if(b == 0)

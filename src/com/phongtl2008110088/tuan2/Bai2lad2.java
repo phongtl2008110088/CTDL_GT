@@ -8,11 +8,11 @@ public class Bai2lad2 {
         int a, b, c;
         double x1, x2, delta;
         Scanner heSo = new Scanner(System.in);
-        System.out.print("Nhập a = ");
+        System.out.print("Nhập số thứ nhất : ");
         a = heSo.nextInt();
-        System.out.print("Nhập b = ");
+        System.out.print("Nhập số thứ hai : ");
         b = heSo.nextInt();
-        System.out.print("Nhập c = "); 
+        System.out.print("Nhập số thứ ba : "); 
         c = heSo.nextInt();
         if(a == 0){
             if(b == 0){
