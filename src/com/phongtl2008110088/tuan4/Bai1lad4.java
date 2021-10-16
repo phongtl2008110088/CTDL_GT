@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
     public class Bai1lad4 {
     public static void main(String[] args) {
-        double b;
-        String a;
+        double a;
         double tong = 0;
         Scanner n = new Scanner(System.in);
         ArrayList<Double> list = new ArrayList<>();
         while(true){
             System.out.printf("Nhập phần tử thứ %d: ", list.size());
-            b = n.nextDouble();
-            list.add(b);
+            a = n.nextDouble();
+            list.add(a);
             n.nextLine();
                  break;
         }
