@@ -47,7 +47,7 @@ public class khoAppletestdiver {
 		System.out.println("Nhập màu táo muốn tìm: ");
 		bienNhap.nextLine();
 		String mau = bienNhap.nextLine();
-		System.out.println("Các trái táo màu Đỏ:");
+		System.out.println("Các trái táo màu được chọn :");
 		listApple.search(mau);
 		System.out.println();
 		System.out.println("------------------");
