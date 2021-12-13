@@ -32,11 +32,11 @@ public class HangHoa {
         System.out.println("Nhap ten : ");
         sc.nextLine();
         tenhanghoa = sc.nextLine();
-        System.out.println("Nhập Hía: ");
+        System.out.println("Nhập gía: ");
         gianhap = sc.nextDouble();
         System.out.println("Nhập số lượng tồn kho: ");
         soluongtonkho = sc.nextInt();
-        System.out.println("Ngày nhap khoa: ");
+        System.out.println("Ngày nhap : ");
         sc.nextLine();
         ngaynhapkho = sc.nextLine();
 

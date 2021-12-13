@@ -19,7 +19,7 @@ public class main {
             System.out.println("8. Sắp xếp tăng dần giá sản phẩm");
             System.out.println("9. Sắp xếp giảm dần ngày tháng của sản phẩm");
             System.out.println("10. Thống Kê Số Sản Phẩm");
-            System.out.println("11. Thống Kê Tồn Kho");
+            System.out.println("11. Thống Kê    Tồn Kho");
             System.out.println("12. Thống Kê Loại Sản Phẩm");
             System.out.println("13. Kết Thúc Chương Trình");
             System.out.println("    VUI LÒNG CHỌN LỰA CHỌN: ");
