@@ -14,7 +14,7 @@ public class KhoHang {
             sc.nextLine();
             qList.add(hangHoa);
 
-            System.out.println("Nhập Thềm (y/n): ");
+            System.out.println("Nhap Them (y/n): ");
             if(sc.nextLine().equals("n"))
             break;
         }
@@ -27,7 +27,7 @@ public class KhoHang {
     }
     static void tim(){
         for(HangHoa x : qList){
-            System.out.println("nhập loại cần tìm: ");
+            System.out.println("nhap loai can tim: ");
             if(sc.nextLine() == x.loai){
                 x.inThongTin();
                 break;

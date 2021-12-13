@@ -25,18 +25,18 @@ public class HangHoa {
     }
 
     void nhapthongtin(){
-        System.out.println("Nhập loai: ");
+        System.out.println("Nhap loai: ");
         loai = sc.nextLine();
-        System.out.println("Nhập ID: ");
+        System.out.println("Nhap ID: ");
         mahang = sc.nextInt();
         System.out.println("Nhap ten : ");
         sc.nextLine();
         tenhanghoa = sc.nextLine();
-        System.out.println("Nhập gía: ");
+        System.out.println("Nhap gia: ");
         gianhap = sc.nextDouble();
-        System.out.println("Nhập số lượng tồn kho: ");
+        System.out.println("Nhap so luong ton kho: ");
         soluongtonkho = sc.nextInt();
-        System.out.println("Ngày nhap : ");
+        System.out.println("Ngay nhap hang : ");
         sc.nextLine();
         ngaynhapkho = sc.nextLine();
 

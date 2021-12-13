@@ -41,7 +41,7 @@ public class KhoLinkedList {
     public void in() {
         Node current = head;
         if (head == null) {
-            System.out.println("Danh sách trống");
+            System.out.println("Danh sach trong");
         } else {
             while (current != null) {
                 current.hangHoa.inThongTin();
@@ -87,7 +87,7 @@ public class KhoLinkedList {
     public void removeFist() {
         
         if (head == null) {
-            System.out.println("Danh sách trống");
+            System.out.println("Danh sach trong");
             return;
         }
         head = head.next;
