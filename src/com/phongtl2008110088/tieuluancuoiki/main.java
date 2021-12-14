@@ -3,7 +3,7 @@ package com.phongtl2008110088.tieuluancuoiki;
 import java.util.Scanner;
 
 public class main {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         KhoLinkedList qlkho = new KhoLinkedList();
         Scanner  sc = new Scanner(System.in);
         int luaChon;
@@ -18,10 +18,7 @@ public class main {
             System.out.println("7. Tim Kiem Theo Ngay Thang");
             System.out.println("8. Sap xep tang dan gia san pham");
             System.out.println("9. Sap xep giam dan ngay thang cua san pham");
-            System.out.println("10. Thong Ke So San Pham");
-            System.out.println("11. Thong Ke Ton Kho");
-            System.out.println("12. Thong Ke Loai San Pham");
-            System.out.println("13. Ket Thuc Chuong Trinh");
+            System.out.println("10.Ket Thuc Chuong Trinh");
             System.out.println("    VUI LONG CHON LUA CHON: ");
 
             luaChon = sc.nextInt();
@@ -76,17 +73,9 @@ public class main {
                 case 9:
                 System.out.println("9. Sap xep giam dan ngay thang cua san pham");
                 qlkho.sapxepgd();
-                case 10:
-                System.out.println("10. Thong Ke So San Pham");
-                qlkho.thongketongsoluong();
-                case 11:
-                System.out.println("11. Thong Ke Ton Kho");
-                qlkho.thongketonggiatri();
-                case 12:
-                System.out.println("12. Thong Ke Loai San Pham");
-                qlkho.soluongtungloai();
+
                 case 13:
-                System.out.println("13. Ket Thuc Chương Trinh");
+                System.out.println("10. Ket Thuc Chương Trinh");
                 System.exit(0);
                 break;
                     

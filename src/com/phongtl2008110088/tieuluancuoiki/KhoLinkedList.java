@@ -12,7 +12,6 @@ public class KhoLinkedList {
     Scanner sc = new Scanner(System.in);
 
     public void addFirst() {
-        // hàng thêm đầu ds
         HangHoa hangHoa = new HangHoa();
         Node newHangHoa = new Node(hangHoa);
         newHangHoa.hangHoa.nhapthongtin();
@@ -115,11 +114,6 @@ public class KhoLinkedList {
     }
 
     public void sapxepgd(){}
-
-    public void thongketongsoluong(){}
-
-    public void thongketonggiatri(){}
-
-    public void soluongtungloai(){}
-
 }
+
+    
