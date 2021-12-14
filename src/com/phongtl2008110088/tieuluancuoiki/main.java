@@ -1,89 +1,81 @@
 package com.phongtl2008110088.tieuluancuoiki;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class main {
-        public static void main(String[] args) {
-        KhoLinkedList qlkho = new KhoLinkedList();
-        Scanner  sc = new Scanner(System.in);
-        int luaChon;
-        do{
-            System.out.println("..................MENU...............");
-            System.out.println("1. Nhap Thong Tin San Pham");
-            System.out.println("2. In Thong Tin San Pham");
-            System.out.println("3. Xoa Hang Hoa");
-            System.out.println("4. Sua Thong Tin Hang Hoa");
-            System.out.println("5. Tim Kiem Theo Loai");
-            System.out.println("6. Tim Kiem Theo Gia");
-            System.out.println("7. Tim Kiem Theo Ngay Thang");
-            System.out.println("8. Sap xep tang dan gia san pham");
-            System.out.println("9. Sap xep giam dan ngay thang cua san pham");
-            System.out.println("10.Ket Thuc Chuong Trinh");
-            System.out.println("    VUI LONG CHON LUA CHON: ");
 
-            luaChon = sc.nextInt();
-            switch(luaChon){
-                case 1: 
-                System.out.println("1. Nhap Thong Tin San Pham");
-                qlkho.addFirst();
-                break;
-                case 2:
-                System.out.println("2. In Thong Tin San Pham");
-                qlkho.in();
-                
-                break;
-                case 3:
-                System.out.println("3.Xoa Hang Hoa");
-                qlkho.removeFist();
-                break;
-                case 4:
-                System.out.println("4. Sua Thong Tin Hang Hoa");
-                qlkho.sua();
-                break;
-                case 5:
-                System.out.println("5. Tim Kiem Theo Loai");
-                String tim = sc.nextLine();
-                if(qlkho.timloai(tim) != null){
-                    System.out.println(" Sản phẩm có trong kho ");
-                } else {
-                    System.out.println("Không tìm thấy Sản Phẩm");
-                }
-                break;
-                case 6:
-                System.out.println("6. Tim Kiem Theo Gia");
-                double timg = sc.nextDouble();
-                if(qlkho.timgia(timg) != null){
-                    System.out.println("San pham co trong kho ");
-                }else {
-                    System.out.println("Khong tim thay San Pham");
-                }
-                break;
-                case 7:
-                System.out.println("7. Tim Kiem Theo Ngay Thang");
-                String timn = sc.nextLine();
-                if(qlkho.timngaynhap(timn) != null){
-                    System.out.println("San pham co trong kho");
-                }else {
-                    System.out.println("Khong tim thay San Pham");
-                }
-                break;
-                case 8:
-                System.out.println("8. Sap xep tang dan gia san pham");
-                qlkho.sapxeptd();
-                case 9:
-                System.out.println("9. Sap xep giam dan ngay thang cua san pham");
-                qlkho.sapxepgd();
+	static Scanner bienNhap = new Scanner(System.in);
+	public static KhoHang kho = new KhoHang();
+	
+	public static void main(String[] args) {
+		
+		Date a = new Date();
+		
+		DienMay headDM = new DienMay(1, "1", 1, a);
+		SanhSu headSS = new SanhSu(2, "2", 2, a);
+		ThucPham headTP = new ThucPham(3, "3", 3, a);
+		
+		DienMay DM1 = new DienMay(4, "4", 4, a);
+		headDM.next = DM1;
+		SanhSu SS1 = new SanhSu(5, "5", 5, a);
+		headSS.next = SS1;
+		ThucPham TP1 = new ThucPham(6, "6", 6, a);
+		headTP.next = TP1;
+		
+		DienMay DM2 = new DienMay(7, "7", 7, a);
+		DM1.next = DM2;
+		SanhSu SS2 = new SanhSu(8, "8", 9, a);
+		SS1.next = SS2;
+		ThucPham TP2 = new ThucPham(9, "9", 9, a);
+		TP1.next = TP2;
+		
+		kho.headDienMay = headDM;
+		kho.headSanhSu = headSS;
+		kho.headThucPham = headTP;
+		
+		
+		while (true){
+        	System.out.println();
+    		System.out.println("____________MENU____________");
+            System.out.println("1)  Them san pham		");
+            System.out.println("2)  In thong tin san pham	");
+            System.out.println("3)  Xoa san pham    ");
+            System.out.println("4)  Tim hang hoa   		");
+            System.out.println("5)  Thong ke hang hoa    ");
+            System.out.println("6)  Thoat  ");
+            System.out.print("Vui long chon chuong trinh: ");
+            int key = bienNhap.nextInt();
+            
+            switch(key){
+        	case 1:	ThemHang(kho);break;
+        	case 2:	InThongTin(kho);break;
+        	case 3:	XoaHang(kho);break;
 
-                case 13:
-                System.out.println("10. Ket Thuc Chương Trinh");
-                System.exit(0);
-                break;
-                    
-            }
-            System.out.println("Quay lai chương trình (1.Y 2.N) ");
-            luaChon = sc.nextInt();
-            
-            
-        } while(luaChon != 0);
-    }
+        	case 4:	TimHang(kho);break;
+        	case 5:	ThongKeKho(kho);break;
+        	default: break;
+        	}
+		}
+	}
+	
+	public static void ThemHang(KhoHang kho) {
+		kho.ThemHang(bienNhap);
+	}
+	
+	public static void InThongTin(KhoHang kho){
+		kho.InTT();
+	}
+	
+	public static void XoaHang(KhoHang kho) {
+		kho.XoaHang(bienNhap);
+	}
+	
+	public static void TimHang(KhoHang kho) {
+		kho.TimHang(bienNhap);
+	}
+	
+	public static void ThongKeKho(KhoHang kho) {
+		kho.ThongKe(bienNhap);
+	}
 }
