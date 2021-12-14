@@ -43,12 +43,12 @@ public class HangHoa {
     }
 
     void inThongTin(){
-        System.out.println("type: " + loai);
-        System.out.println("ID: " + mahang);
-        System.out.println("name: " + tenhanghoa);
-        System.out.println("price: " + gianhap);
-        System.out.println("invertory quantity: " + soluongtonkho);
-        System.out.println("date of entry into the warehouse: " + ngaynhapkho);
+        System.out.println("loai: " + loai);
+        System.out.println("id: " + mahang);
+        System.out.println("ten hang: " + tenhanghoa);
+        System.out.println("gia san pham: " + gianhap);
+        System.out.println("ton kho: " + soluongtonkho);
+        System.out.println("ngay nhap kho: " + ngaynhapkho);
     }
 
 }
