@@ -14,7 +14,7 @@ public class main {
 		
 		DienMay headDM = new DienMay(1, "1", 1, a);
 		SanhSu headSS = new SanhSu(2, "2", 2, a);
-		ThucPham headTP = new ThucPham(3, "3", 3, a);
+		ThucPham headTP= new ThucPham(3, "3", 3, a);
 		    
 		DienMay DM1 = new DienMay(4, "4", 4, a);
 		headDM.next = DM1;
