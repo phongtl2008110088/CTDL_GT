@@ -23,9 +23,9 @@ public class KhoHang {
 	
 	public void ThemHang(Scanner scanner) {
 		System.out.println("Vui long chon loai hang ");
-		System.out.print("1/ Đien may");
-        System.out.print("2/ Sanh Su");	
-        System.out.print("3/ Thuc Pham");
+		System.out.print("1/ Dien may\n");
+        System.out.print("2/ Sanh Su\n");	
+        System.out.print("3/ Thuc Pham\n");
         System.out.print(" Lua chon:");
 		int loaiHang = scanner.nextInt();
 		

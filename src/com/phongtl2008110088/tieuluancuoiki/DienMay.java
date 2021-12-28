@@ -43,4 +43,4 @@ public class DienMay {
 		System.out.println(ten);
 		return ten;
     }  
-}	
+}
